@@ -2,4 +2,4 @@
 # Студент Борисов Эдуард.
 
 ## Домашние задания
-1. [Проектирование БД]((https://github.com/boredval/otus-db/blob/main/hometasks/hw01.md)
+1. [Проектирование БД](https://github.com/boredval/otus-db/blob/main/hometasks/hw01.md)
