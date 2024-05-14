@@ -7,3 +7,5 @@
 3. [Установка PostgreSQL](https://github.com/boredval/otus-db/blob/main/hometasks/hw03.md)
 4. [DDL скрипты для postgres](https://github.com/boredval/otus-db/blob/main/hometasks/hw04.md)
 5. [DML в PostgreSQL](https://github.com/boredval/otus-db/blob/main/hometasks/hw05.md)
+6. TODO
+7. [Посчитать кол-во очков по всем игрокам за текущий год и за предыдущий](https://github.com/boredval/otus-db/blob/main/hometasks/hw07.md)
