@@ -1,10 +1,29 @@
 version: '3.8'
 services:
-  db:
+  postgresql_master:
     image: postgres:latest
+    container_name: postgresql_master
     restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    ports:
-      - '5432:5432'
+    volumes:
+      - ./data/postgresql_master:/var/lib/postgresql/data
+    networks:
+      docker:
+        ipv4_address: 10.5.0.3
+
+  postgresql_replica:
+    image: postgres:latest
+    container_name: postgresql_replica
+    restart: always
+    volumes:
+      - ./data/postgresql_replica:/var/lib/postgresql/data
+    networks:
+      docker:
+        ipv4_address: 10.5.0.4
+
+networks:
+  docker:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1
