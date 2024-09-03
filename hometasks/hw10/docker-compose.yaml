@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  otusdb:
+    image: mysql:8.0.15
+    environment:
+      MYSQL_ROOT_PASSWORD: '12345'
+    expose:
+      - "3306"
+    ports:
+      - "3309:3306"
